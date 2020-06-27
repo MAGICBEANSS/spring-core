@@ -11,10 +11,13 @@
     
 	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="byName">
 		<property name="firstName" value="Piyush "/>
+		<property name="fullName" value="Piyush Magicbeanss Pandey"/>
 		<property name="midName" value="MAGICBEANSS"/>
+		<constructor-arg value = "455"></constructor-arg>
 	</bean>
+
  
-	<bean id="department" class="com.howtodoinjava.core.autowire.byname.Department" >
+	<bean id="department" class="com.howtodoinjava.core.autowire.byName.Department" >
 		<property name="name" value="Human Resource" />
 	</bean>
 
