@@ -12,7 +12,22 @@
 	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="constructor">
 		<property name="fullName" value="Lokesh Gupta"/>
 	</bean>
- 
+
+	<bean id="a" class="com.howtodoinjava.core.autowire.byName.test.A" >
+		<property name="b"  ref="b" />
+	</bean>
+
+	<bean id="b" class="com.howtodoinjava.core.autowire.byName.test.B" >
+		<property name="c"  ref="c" />
+	</bean>
+
+	<bean id="c" class="com.howtodoinjava.core.autowire.byName.test.C" >
+		<property name="varc"  value="cpropvalue" />
+	</bean>
+
+
+
+
 	<bean id="department" class="com.howtodoinjava.core.autowire.byName.Department" >
 		<property name="name" value="Human Resource" />
 	</bean>
