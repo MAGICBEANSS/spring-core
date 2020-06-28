@@ -10,7 +10,7 @@
     <context:annotation-config />
     
 	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="byName">
-		<property name="fullName" value="Lokesh Gupta"/> 
+		<property name="fullName" value="Lokesh Gupta"/>
 	</bean>
  
 	<bean id="department" class="com.howtodoinjava.core.autowire.byName.Department" >

@@ -6,10 +6,9 @@ public class TestAutowire {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"com/howtodoinjava/core/autowire/byName/application-context.xml");
+				"application-context.xml");
 
 		Employee employee = (Employee) context.getBean("employee");
-		System.out.println(employee.getFullName());
-		System.out.println(employee.getDepartment().getName());
+		System.out.println(employee);
 	}
 }
