@@ -9,7 +9,7 @@
 
     <context:annotation-config />
     
-	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="byType">
+	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="constructor">
 		<property name="fullName" value="Lokesh Gupta"/>
 	</bean>
  
