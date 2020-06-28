@@ -17,6 +17,10 @@ public class A {
     return varA;
   }
 
+  public B getB() {
+    return b;
+  }
+
   public void setVarA(String varA) {
     System.out.println("Setting varA value in A's setter ");
 
@@ -31,4 +35,5 @@ public class A {
     System.out.println("A  b = CONSTRUCTOR");
     this.b = b;
   }
+
 }

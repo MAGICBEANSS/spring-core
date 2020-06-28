@@ -1,8 +1,10 @@
 package com.howtodoinjava.core.autowire.byName.test;
 
+import lombok.Getter;
 import lombok.ToString;
 
 @ToString
+@Getter
 public class B {
   String varb;
   C c;

@@ -13,8 +13,9 @@
 		<property name="fullName" value="Lokesh Gupta"/>
 	</bean>
 
-	<bean id="a" class="com.howtodoinjava.core.autowire.byName.test.A" >
+	<bean id="a" class="com.howtodoinjava.core.autowire.byName.test.A" scope="prototype">
 		<property name="b"  ref="b" />
+		<property name="varA"  value="props value A" />
 	</bean>
 
 	<bean id="b" class="com.howtodoinjava.core.autowire.byName.test.B" >
