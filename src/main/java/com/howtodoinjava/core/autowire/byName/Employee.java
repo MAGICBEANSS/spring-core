@@ -10,6 +10,7 @@ public class Employee
 	private String fullName;
 	private static String lastName;
 	private static String  midName;
+	private Integer o = 0;
 
 	public static void setMidName(String midName) {
 		Employee.midName = midName;
@@ -29,32 +30,33 @@ public class Employee
 
 	public Employee(String firstName) {
 
-		this.firstName = firstName;
+		this.firstName = firstName+" constructor args set";
 		this.midName = "COnstructorMidname";
 	}
 
-	public Employee(Integer o) {
 
+
+
+	public Employee(Integer o) {
+		this.o = o;
 		this.firstName = "1args ";
 		this.midName = "1args";
 	}
 
-	public Employee() {
+
+  public Employee(int o) {
+    this.o = o;
+    this.firstName = "1args ";
+    this.midName = "1args";
+  }
+
+
+  public Employee() {
 
 		this.firstName = "0args ";
 		this.midName = "0args";
 	}
 
 
-	@Override
-	public String toString() {
-		return "Employee{" +
-				"firstName='" + firstName + '\'' +
-				", fullName='" + fullName + '\'' +
-				", lastName='" + lastName + '\'' +
-				", midName='" + midName + '\'' +
 
-				", department=" + department +
-				'}';
-	}
 }

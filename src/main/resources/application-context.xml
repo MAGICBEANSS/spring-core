@@ -10,13 +10,39 @@
     <context:annotation-config />
     
 	<bean id="employee" class="com.howtodoinjava.core.autowire.byName.Employee" autowire="byName">
-		<property name="firstName" value="Piyush "/>
-		<property name="fullName" value="Piyush Magicbeanss Pandey"/>
-		<property name="midName" value="MAGICBEANSS"/>
-		<constructor-arg value = "455"></constructor-arg>
+		<constructor-arg value = "455" type="int"></constructor-arg>
 	</bean>
 
- 
+	<alias name="point1" alias="pointA"></alias>
+	<alias name="point2" alias="pointB"></alias>
+	<alias name="point3" alias="pointC"></alias>
+	<alias name="point3" alias="pointB"></alias>
+
+	<bean id="point1" class="com.howtodoinjava.core.autowire.byName.Point">
+		<property name="x" value="0"></property>
+		<property name="y" value="10"></property>
+	</bean>
+
+	<bean id="point2" class="com.howtodoinjava.core.autowire.byName.Point">
+		<property name="x" value="10"></property>
+		<property name="y" value="0"></property>
+	</bean>
+
+	<bean id="point3" class="com.howtodoinjava.core.autowire.byName.Point">
+		<property name="x" value="10"></property>
+		<property name="y" value="10"></property>
+	</bean>
+
+	<bean id="triangle" class="com.howtodoinjava.core.autowire.byName.Triangle">
+		<property name="p1" ref="pointA"></property>
+		<property name="p2" ref="pointB"></property>
+		<property name="p3" ref="pointC"></property>
+	</bean>
+
+
+
+
+
 	<bean id="department" class="com.howtodoinjava.core.autowire.byName.Department" >
 		<property name="name" value="Human Resource" />
 	</bean>

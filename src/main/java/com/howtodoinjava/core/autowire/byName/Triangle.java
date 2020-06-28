@@ -1,4 +1,10 @@
 package com.howtodoinjava.core.autowire.byName;
 
-public class Trianngle {
+import lombok.Data;
+
+@Data
+public class Triangle {
+  Point p1;
+  Point p2;
+  Point p3;
 }
