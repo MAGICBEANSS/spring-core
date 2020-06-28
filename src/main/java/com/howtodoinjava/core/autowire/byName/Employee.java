@@ -10,4 +10,17 @@ public class Employee
 	private String fullName;
 	private Department department;
 
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		System.out.println("Setting through property");
+		this.department = department;
+	}
+
+	Employee(Department department) {
+		System.out.println("Setting through constructor");
+		this.department = department;
+	}
 }
